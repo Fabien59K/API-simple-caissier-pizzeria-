@@ -1,0 +1,101 @@
+html {
+    width: 100%
+}
+body {
+    background-image: url(../img/background-pizza2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+header {
+    height: 180px;
+    background-image: url(../img/banniere2.jpg);
+    background-size: cover;
+    box-shadow: 2px 5px 10px black;
+}
+.form {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+#select, #qty {
+    border: 1px solid black;
+    background-color: bisque;
+ 
+}
+.btn-sm, #qty {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-block {
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.resume {
+    background-color: bisque;
+    height: 100%;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+
+.contenu-commande {
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid grey;
+    margin-top: 100px;
+    background-color: bisque;
+    height: 400px;
+    margin-left: 20px;
+    overflow: auto;
+}
+h3 {
+    font-size: 16px;
+    text-align: center;
+}
+.comande-client {
+    text-align: center; 
+}
+.total {
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.total span {
+    margin-left: 20px;
+}
+.btn-warning {
+    margin-bottom: 20px;
+    background-color: #e4a635;
+    margin-top: 240px;
+    color: white;
+}
+.btn-warning:hover  {
+    background-color: #d18e10;
+    border: 1px solid #d18e10;
+    color: white;
+}
+
+hr {
+    margin-top:0;
+    margin-bottom: 5px;
+}
+ /* ------------------------------------------------------------------- */
+
+ /* #hidden {
+    display: block;
+ }
+ .display {
+     display: initial;
+ } */
+ #hidden .table {
+     margin-top: 0;
+     background-color: bisque;
+ }
+ .table {
+    border: 2px solid gray;
+    border-radius: 5px;
+ }

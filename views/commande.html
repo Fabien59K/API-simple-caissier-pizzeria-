@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/commande.css">
+    <title>Commandes</title>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="form col-6">
+                <div class="row">
+                    <div class="form-group col-6">
+                        <select class="form-control" id="select">
+                            <option disabled selected>Sélection du produit</option>
+                            <optgroup label="Pizzas">
+                                <option value="Margherita">Margherita</option>
+                                <option value="Napolitaine">Napolitaine</option>
+                                <option value="Hawaïenne">Hawaïenne</option>
+                                <option value="Bolognaise">Bolognaise</option>
+                                <option value="Thon">Thon</option>
+                            </optgroup>
+                            <optgroup label="Boissons">
+                                <option value="Coca-cola">Coca-Cola</option>
+                                <option value="Fanta">Fanta</option>
+                                <option value="Oasis">Oasis</option>
+                                <option value="Eau">Eau</option>
+                                <option value="Perrier">Perrier</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group col">
+                        <select class="form-control" id="qty">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group col">
+                        <button type="button" class="btn btn-success btn-block" onclick="addProduct()">+</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col valider">
+                        <button type="button" class="btn btn-success btn-block" onclick="submit()">Valider</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-warning btn-block" onclick="goToList()">Voir les
+                            commandes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- partie droite -->
+
+            <div class="col-5 contenu-commande">
+                <h3>Contenu de la commande : </h3>
+                <div class="commandeClient">
+                    <div class="row">
+                        <div class="col-4 title">Produit</div>
+                        <div class="col-3 title">Quantité</div>
+                        <div class="col-3 title">Prix TTC</div>
+                    </div>
+                    <hr style="height:1px; background-color:black;">
+                </div>
+                <div class="row total">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTIE LISTE DES COMMANDES -->
+
+    <section class="container-fluid" id="hidden" style="display:none;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col text-left">N° de Commande</th>
+                    <th scope="col">Prduits Commandés</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody class="contenuTableau">
+
+            </tbody>
+        </table>
+    </section>
+</body>
+<script src="../js/app.js"></script>
+
+</html>
